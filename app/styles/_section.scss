@@ -1,3 +1,17 @@
+.section {
+  &__header {
+    background: $main_color;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: $white_color;
+  }
+
+  &__main {
+    margin: 30px;
+  }
+}
+
 .header {
   min-height: 250px;
   background: $gray_weight_color;
