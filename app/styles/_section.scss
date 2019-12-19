@@ -1,12 +1,54 @@
 .header {
-  min-height: 250px;
-  background: $gray_weight_color;
+  background-image: linear-gradient(to bottom, #bfece3, #fff);
+
+  &__top-img img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  &__sub-text {
+    padding: 3rem;
+  }
+
+  .title-img {
+    position: fixed;
+    top: 10px;
+    max-width: 300px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      padding: 20px;
+      border: 2px dashed $background_color;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  .content {
+    justify-content: start;
+
+    &__list {
+      padding: 2rem 6rem;
+    }
+
+    li {
+      list-style: disc;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
 }
 
-.material {
 
-}
+.material {}
 
-.footer {
-
-}
+.footer {}
