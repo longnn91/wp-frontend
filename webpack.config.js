@@ -13,7 +13,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CopyWebpackPluginConfig = new CopyWebpackPlugin([
          {from:'./app/img',to:'img'},
-         {from:'./app/video',to:'video'},
          {from:'./app/fonts',to:'fonts'}
      ]);
 
@@ -69,7 +68,6 @@ module.exports = {
   devServer: {
     contentBase: '/dist',
     historyApiFallback: true,
-    host: 'training-frontend.com',
     port: 3000
   }
 }
