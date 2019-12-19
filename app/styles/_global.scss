@@ -1,0 +1,9 @@
+body, input, button, select {
+  font-family: 'Space Mono', monospace;
+}
+
+.wrapper {
+  max-width: 960px;
+  min-height: 100vh;
+  background: $gray_light_color;
+}

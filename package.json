@@ -1,0 +1,35 @@
+{
+  "name": "shenlong",
+  "version": "1.0.0",
+  "description": "Neolab's trainning FrontEnd course: http://pivot.mediumra.re/index.html, https://laracasts.com/join",
+  "main": "index.js",
+  "repository": "https://github.com/longnn91/training-frontend.git",
+  "author": "shenlong",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "webpack": "^4.19.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack-cli": "^3.1.1"
+  }
+}
