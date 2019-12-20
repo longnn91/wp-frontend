@@ -1,3 +1,17 @@
+.section {
+  &__header {
+    background: $main_color;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: $white_color;
+  }
+
+  &__main {
+    margin: 30px;
+  }
+}
+
 .header {
   background-image: linear-gradient(to bottom, #bfece3, #fff);
 

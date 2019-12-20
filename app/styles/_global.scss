@@ -3,8 +3,29 @@ body, input, button, select {
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: $max-width;
   min-height: 100vh;
   margin: 0 auto;
   background: $gray_light_color;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: column;
+
+  &__avarta {
+    flex-basis: 40%;
+  }
+
+  &__main {
+    flex-basis: 60%;
+
+    &__header {
+      height: 40px;
+    }
+  }
+
+  &--size-sm {
+    height: 200px;
+  }
 }
