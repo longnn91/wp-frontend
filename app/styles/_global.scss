@@ -11,21 +11,71 @@ body, input, button, select {
 
 .box-list {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 2.4rem;
 
   &__avarta {
     flex-basis: 40%;
+    border: 1px solid $main_color;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__main {
     flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
 
     &__header {
-      height: 40px;
+      height: 30px;
+      background: $main_color;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $white_color;
+    }
+
+    &__content {
+      flex-grow: 1;
+
+      .list-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
     }
   }
 
   &--size-sm {
     height: 200px;
+  }
+}
+
+.list-text {
+  li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $main_color; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.4em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  li {
+    margin-left: 1.4rem;
+    .content {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.text {
+  &__list-title {
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 }
