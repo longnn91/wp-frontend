@@ -5,6 +5,11 @@
     padding: 10px;
     font-size: 1.6rem;
     color: $white_color;
+
+    &__subtitle {
+      font-size: 1rem;
+      font-style: italic;
+    }
   }
 
   &__main {
@@ -101,6 +106,18 @@
   }
 
 
+}
+
+.example {
+  .note {
+    border-radius: 0 0 0 20px;
+    border: 1px dashed $background_color;
+    padding: 20px;
+
+    li {
+      list-style: inside;
+    }
+  }
 }
 
 .footer {
