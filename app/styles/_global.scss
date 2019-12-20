@@ -1,12 +1,16 @@
-body, input, button, select {
+body,
+input,
+button,
+select {
   font-family: 'Space Mono', monospace;
+  // font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
   max-width: $max-width;
   min-height: 100vh;
   margin: 0 auto;
-  background: $gray_light_color;
+  // background: $gray_light_color;
 }
 
 .box-list {
