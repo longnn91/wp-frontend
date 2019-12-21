@@ -68,7 +68,70 @@
 }
 
 
-.material {}
+.material {
+  .box {
+    margin-top: 1.5rem;
+    border: 3px solid $background_color;
+
+    &__label {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.4rem;
+      background: $background_color;
+      padding: 1.5rem;
+      color: #fff;
+    }
+
+    &__item {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      &__border {
+        border-right: dashed 1px $background_color;
+        border-left: dashed 1px $background_color;
+      }
+
+      &__title {
+        text-align: center;
+        font-weight: 800;
+        margin: 1rem 0;
+
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    .img-content {
+      flex-basis: 60%;
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 600px;
+      background: rgb(191, 236, 227);
+      background: linear-gradient(90deg, rgba(191, 236, 227, 1) 0%, rgba(191, 236, 227, 1) 60%, rgba(255, 255, 255, 0.3029586834733894) 100%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 3rem;
+
+      .hightlight {
+        background: $main_color;
+        color: #fff;
+        padding: 0 0.25rem;
+      }
+
+      &__main-content {
+        text-align: justify;
+      }
+
+      &__sub-content {
+        margin-top: 2rem;
+        text-align: right;
+      }
+    }
+  }
+}
 
 .method {
   &__map img {
@@ -108,17 +171,7 @@
 
 }
 
-.example {
-  .note {
-    border-radius: 0 0 0 20px;
-    border: 1px dashed $background_color;
-    padding: 20px;
-
-    li {
-      list-style: inside;
-    }
-  }
-}
+.example {}
 
 .footer {
   &__img img {
