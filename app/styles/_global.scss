@@ -16,6 +16,7 @@ select {
 .box-list {
   display: flex;
   margin-bottom: 2.4rem;
+  $root: &;
 
   &__avarta {
     flex-basis: 40%;
@@ -48,12 +49,26 @@ select {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        &--algin-top {
+          justify-content: flex-start;
+
+          li {
+            margin-top: 20px;
+          }
+        }
       }
     }
   }
 
-  &--size-sm {
-    height: 200px;
+  &--full {
+    #{$root}__avarta {
+      flex-basis: 20%;
+    }
+
+    #{$root}__main {
+      flex-basis: 80%;
+    }
   }
 }
 
