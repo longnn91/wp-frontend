@@ -21,6 +21,7 @@ select {
   &__avarta {
     flex-basis: 40%;
     border: 1px solid $main_color;
+
     img {
       width: 100%;
       height: auto;
@@ -33,9 +34,9 @@ select {
     flex-direction: column;
 
     &__header {
-      height: 30px;
+      // height: 30px;
       background: $main_color;
-      padding-left: 1rem;
+      padding: 1rem;
       font-size: 1.4rem;
       font-weight: 600;
       color: $white_color;
@@ -74,11 +75,16 @@ select {
 
 .list-text {
   li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: $main_color; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1.4em; /* Also needed for space (tweak if needed) */
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $main_color;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1.4em;
+    /* Also needed for space (tweak if needed) */
     margin-left: -1.4rem;
     text-align: center;
     font-size: 1.2rem;
@@ -86,6 +92,7 @@ select {
 
   li {
     margin-left: 1.4rem;
+
     .content {
       margin-left: 0.5rem;
     }
