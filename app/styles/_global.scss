@@ -73,6 +73,82 @@ select {
   }
 }
 
+.box-flag {
+  $root: &;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+
+  &__avarta {
+    border: 1px solid $main_color;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__main {
+    border-top: 1px solid $main_color;
+    display: flex;
+    margin-bottom: 15px;
+
+    .pin-flag {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    &__text {
+      padding-left: 2%;
+      padding-top: 2%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+  &--algin-hoz {
+    flex-direction: row;
+  }
+
+  &--full {
+    #{$root}__avarta {
+      margin-right: 30px;
+      flex-basis: 50%;
+    }
+
+    #{$root}__main {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.pin-flag {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  width: 52px;
+  height: 100px;
+  background: $main_color;
+  font-size: 2rem;
+  color: $white_color;
+  position: relative;
+  box-sizing: border-box;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 16px solid $white_color;
+
+  }
+}
+
 .list-text {
   li::before {
     content: "\2022";
@@ -100,8 +176,17 @@ select {
 }
 
 .text {
+  &--right {
+    text-align: right;
+  }
+
   &__list-title {
     font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  &__md-bold {
+    font-size: 1.2rem;
     font-weight: 600;
   }
 }
