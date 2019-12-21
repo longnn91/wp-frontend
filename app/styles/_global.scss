@@ -13,10 +13,41 @@ select {
   // background: $gray_light_color;
 }
 
+.box-border {
+  border-radius: 0 0 0 20px;
+  border: 1px dashed $background_color;
+  padding: 20px;
+
+  &__process {
+    border-radius: 0 20px 20px 20px;
+    border-right: 10px solid $background_color;
+  }
+
+  &__full-radius {
+    border-radius: 30px;
+  }
+
+  li {
+    padding: 0.5rem;
+    list-style: inside;
+  }
+}
+
+.label-box {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background: $background_color;
+  padding: 1.5rem;
+  color: #fff;
+}
+
 .box-list {
   display: flex;
   margin-bottom: 2.4rem;
   $root: &;
+
+
 
   &__avarta {
     flex-basis: 40%;
@@ -80,7 +111,7 @@ select {
   margin-bottom: 15px;
 
   &__avarta {
-    border: 1px solid $main_color;
+    border: 4px solid $background_color;
     margin-bottom: 15px;
 
     img {
@@ -104,8 +135,11 @@ select {
       padding-top: 2%;
       flex-grow: 1;
       flex-shrink: 1;
+      font-weight: 600;
+      font-size: 1.2rem;
     }
   }
+
   &--algin-hoz {
     flex-direction: row;
   }

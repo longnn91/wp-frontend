@@ -68,7 +68,70 @@
 }
 
 
-.material {}
+.material {
+  .box {
+    margin-top: 1.5rem;
+    border: 3px solid $background_color;
+
+    &__label {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.4rem;
+      background: $background_color;
+      padding: 1.5rem;
+      color: #fff;
+    }
+
+    &__item {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      &__border {
+        border-right: dashed 1px $background_color;
+        border-left: dashed 1px $background_color;
+      }
+
+      &__title {
+        text-align: center;
+        font-weight: 800;
+        margin: 1rem 0;
+
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    .img-content {
+      flex-basis: 60%;
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 600px;
+      background: rgb(191, 236, 227);
+      background: linear-gradient(90deg, rgba(191, 236, 227, 1) 0%, rgba(191, 236, 227, 1) 60%, rgba(255, 255, 255, 0.3029586834733894) 100%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 3rem;
+
+      .hightlight {
+        background: $main_color;
+        color: #fff;
+        padding: 0 0.25rem;
+      }
+
+      &__main-content {
+        text-align: justify;
+      }
+
+      &__sub-content {
+        margin-top: 2rem;
+        text-align: right;
+      }
+    }
+  }
+}
 
 .method {
   &__map img {
@@ -108,14 +171,114 @@
 
 }
 
-.example {
-  .note {
-    border-radius: 0 0 0 20px;
-    border: 1px dashed $background_color;
-    padding: 20px;
+.process {
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-    li {
-      list-style: inside;
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: $background_color;
+    top: 0;
+    bottom: 0;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+
+    h2,
+    p {
+      color: white;
+    }
+  }
+
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid $main_color;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+
+    h2,
+    p {
+      color: white;
+    }
+  }
+
+
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent $background_color transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: $background_color;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid $background_color;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent $background_color transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .right::after {
+      left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
     }
   }
 }
