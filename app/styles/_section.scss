@@ -114,12 +114,12 @@
       flex-basis: 60%;
       margin-top: 1.5rem;
       width: 100%;
-      background: rgb(191, 236, 227);
-      background: linear-gradient(90deg, rgba(191, 236, 227, 1) 0%, rgba(191, 236, 227, 1) 60%, rgba(255, 255, 255, 0.3029586834733894) 100%);
       display: flex;
       justify-content: center;
       flex-direction: column;
       padding: 3rem;
+      background: linear-gradient(90deg, #3cab94 0%, #2d927e 50%, rgba(255, 255, 255, 0.302959) 100%), url("../img/showroom.jpg");
+      background-size:cover;
 
       .hightlight {
         background: $main_color;
@@ -129,6 +129,7 @@
 
       &__main-content {
         text-align: justify;
+        color: $white_color;
         &:first-letter {
             font-size: 3.2em;
             float: left;
@@ -141,6 +142,7 @@
       &__sub-content {
         margin-top: 2rem;
         text-align: right;
+        color: #0e135a;
       }
     }
   }

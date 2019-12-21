@@ -68,7 +68,10 @@ select {
       font-weight: 600;
       color: $white_color;
       position: relative;
-      border-right: 60px solid $white_color;
+
+      &.has-tail {
+        border-right: 60px solid $white_color;
+      }
 
       img {
         position: absolute;
