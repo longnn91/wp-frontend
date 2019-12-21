@@ -2,8 +2,7 @@ body,
 input,
 button,
 select {
-  font-family: 'Space Mono', monospace;
-  // font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 .wrapper {
@@ -29,7 +28,6 @@ select {
 
   li {
     padding: 0.5rem;
-    list-style: inside;
   }
 }
 
@@ -47,10 +45,8 @@ select {
   margin-bottom: 2.4rem;
   $root: &;
 
-
-
   &__avarta {
-    flex-basis: 40%;
+    flex-basis: 34%;
     border: 1px solid $main_color;
 
     img {
@@ -60,17 +56,26 @@ select {
   }
 
   &__main {
-    flex-basis: 60%;
+    flex-basis: 66%;
     display: flex;
     flex-direction: column;
 
     &__header {
       // height: 30px;
       background: $main_color;
-      padding: 1rem;
+      padding: 0.8rem;
       font-size: 1.4rem;
       font-weight: 600;
       color: $white_color;
+      position: relative;
+      border-right: 60px solid $white_color;
+
+      img {
+        position: absolute;
+        left: calc(100% - 20px);
+        top: 0px;
+        height: 100%;
+      }
     }
 
     &__content {
@@ -95,11 +100,11 @@ select {
 
   &--full {
     #{$root}__avarta {
-      flex-basis: 20%;
+      flex-basis: 16%;
     }
 
     #{$root}__main {
-      flex-basis: 80%;
+      flex-basis: 74%;
     }
   }
 }
