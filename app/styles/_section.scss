@@ -1,10 +1,10 @@
 .section {
   &__header {
-    background: $background_color;
     text-align: center;
     padding: 10px;
     font-size: 1.6rem;
     color: $white_color;
+    background: linear-gradient(90deg, rgba(2, 162, 231, 0.9) 100%, rgba(2, 162, 231, 0.9) 100%, rgba(2, 162, 231, 0.9) 100%), url("../img/title-watermark.jpeg");
 
     &__subtitle {
       font-size: 1rem;
