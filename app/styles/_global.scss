@@ -5,17 +5,23 @@ select {
   font-family: 'Roboto Condensed', sans-serif !important;
 }
 
+body {
+  background-color: $gray_light_color !important;
+}
+
 .wrapper {
   max-width: $max-width;
   min-height: 100vh;
   margin: 0 auto;
-  // background: $gray_light_color;
+  background: white;
+
 }
 
 .box-border {
   border-radius: 0 0 0 20px;
   border: 1px dashed $background_color;
   padding: 20px;
+  width: 100%;
 
   &__process {
     border-radius: 0 20px 20px 20px;
@@ -47,7 +53,7 @@ select {
 
   &__avarta {
     flex-basis: 34%;
-    border: 1px solid $main_color;
+    border: 1px solid $background_color;
 
     img {
       width: 100%;
@@ -62,7 +68,7 @@ select {
 
     &__header {
       // height: 30px;
-      background: $main_color;
+      background: $background_color;
       padding: 0.8rem;
       font-size: 1.4rem;
       font-weight: 600;
@@ -129,7 +135,7 @@ select {
   }
 
   &__main {
-    border-top: 1px solid $main_color;
+    border-top: 1px solid $background_color;
     display: flex;
     margin-bottom: 15px;
 
@@ -171,7 +177,7 @@ select {
   padding-bottom: 20px;
   width: 52px;
   height: 100px;
-  background: $main_color;
+  background: $background_color;
   font-size: 2rem;
   color: $white_color;
   position: relative;
@@ -195,7 +201,7 @@ select {
   li::before {
     content: "\2022";
     /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: $main_color;
+    color: $background_color;
     /* Change the color */
     font-weight: bold;
     /* If you want it to be bold */
