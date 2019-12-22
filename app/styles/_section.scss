@@ -108,10 +108,8 @@
   }
 
   .content {
-    display: flex;
 
     .img-content {
-      flex-basis: 60%;
       margin-top: 1.5rem;
       width: 100%;
       display: flex;
@@ -119,27 +117,31 @@
       flex-direction: column;
       padding: 3rem;
       background: linear-gradient(90deg, #3cab94 0%, #2d927e 50%, rgba(255, 255, 255, 0.302959) 100%), url("../img/showroom.jpg");
-      background-size:cover;
+      background-size: cover;
 
       .hightlight {
         background: $main_color;
+        font-weight: 600;
         color: #fff;
         padding: 0 0.25rem;
       }
 
       &__main-content {
+        max-width: 60%;
         text-align: justify;
         color: $white_color;
+
         &:first-letter {
-            font-size: 3.2em;
-            float: left;
-            margin-top: 0.6rem;
-            margin-right: 0.4rem;
-            line-height: 2rem;
+          font-size: 3.2em;
+          float: left;
+          margin-top: 0.6rem;
+          margin-right: 0.4rem;
+          line-height: 2rem;
         }
       }
 
       &__sub-content {
+        max-width: 60%;
         margin-top: 2rem;
         text-align: right;
         color: #0e135a;
