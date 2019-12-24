@@ -13,7 +13,7 @@ body {
   max-width: $max-width;
   min-height: 100vh;
   margin: 0 auto;
-  background-image: url("../img/watermark.jpeg");
+  background-image: url("../img/watermark_40.jpg");
   background-repeat: repeat;
   background-size: 300px 300px;
 
@@ -80,40 +80,42 @@ body {
       @media (min-width: $max-width) {
         &.tail-left {
           padding-left: 45px;
+
           &:before {
-              content: '';
-              display: block;
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              box-sizing: border-box;
-              border-top: 30px solid transparent;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            box-sizing: border-box;
+            border-top: 30px solid transparent;
+            border-left: 40px solid $white-color;
+            border-bottom: 30px solid transparent;
+          }
+
+          &--md {
+            &:before {
+              border-top: 42px solid transparent;
               border-left: 40px solid $white-color;
-              border-bottom: 30px solid transparent;
+              border-bottom: 42px solid transparent;
             }
-            &--md {
-              &:before {
-                border-top: 42px solid transparent;
-                border-left: 40px solid $white-color;
-                border-bottom: 42px solid transparent;
-              }
-            }
+          }
 
-            &--lg {
-              &:before {
-                border-top: 46px solid transparent;
-                border-left: 40px solid $white-color;
-                border-bottom: 46px solid transparent;
-              }
+          &--lg {
+            &:before {
+              border-top: 46px solid transparent;
+              border-left: 40px solid $white-color;
+              border-bottom: 46px solid transparent;
             }
+          }
 
-            &--xl {
-              &:before {
-                border-top: 57px solid transparent;
-                border-left: 40px solid $white-color;
-                border-bottom: 57px solid transparent;
-              }
+          &--xl {
+            &:before {
+              border-top: 57px solid transparent;
+              border-left: 40px solid $white-color;
+              border-bottom: 57px solid transparent;
             }
+          }
         }
 
         &.tail-right {
@@ -127,7 +129,7 @@ body {
             border-top: 30px solid transparent;
             border-right: 40px solid $white-color;
             border-bottom: 30px solid transparent;
-            }
+          }
 
           &--md {
             &:before {
@@ -147,6 +149,7 @@ body {
 
           &--xl {
             padding-right: 40px;
+
             &:before {
               border-top: 57px solid transparent;
               border-right: 40px solid $white-color;
