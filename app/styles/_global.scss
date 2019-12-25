@@ -18,6 +18,10 @@ h6 {
   color: $background_color;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .wrapper {
   max-width: $max-width;
   min-height: 100vh;
@@ -29,18 +33,18 @@ h6 {
 }
 
 .box-border {
-  border-radius: 0 0 0 20px;
+  border-radius: 0 0 0 7px;
   border: 1px dashed $background_color;
   padding: 20px;
   width: 100%;
 
   &__process {
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 7px 7px 7px;
     border-right: 10px solid $background_color;
   }
 
   &__full-radius {
-    border-radius: 30px;
+    border-radius: 7px;
   }
 
   li {
@@ -81,7 +85,7 @@ h6 {
       // height: 30px;
       background: $background_color;
       padding: 0.8rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: $white_color;
       position: relative;
@@ -171,6 +175,7 @@ h6 {
 
     &__content {
       flex-grow: 1;
+      font-size: 1.2rem;
 
       .list-text {
         height: 100%;
@@ -233,6 +238,7 @@ h6 {
       flex-shrink: 1;
       font-weight: 600;
       font-size: 1.2rem;
+      text-align: justify;
     }
   }
 
@@ -311,7 +317,7 @@ h6 {
   }
 
   &__list-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 
