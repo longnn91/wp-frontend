@@ -1,0 +1,84 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .header {
+    &__price__title {
+        margin: 1.5rem 0;
+    }
+
+    .content__list {
+      padding: 1rem 0;
+    }
+  }
+
+  .section {
+    &__header {
+      &__text-under {
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .box-list {
+    $root: &;
+
+    &--full {
+      #{$root}__avarta {
+        flex-basis: 42%;
+      }
+    }
+
+    &__avarta {
+      overflow: hidden;
+
+      img {
+        width: 125%;
+        height: auto;
+
+        &.stretch-height {
+          width: 133%;
+
+          &--ssm {
+            width: 100%;
+            max-height: 220px;
+          }
+
+          &--sm {
+            width: 140%;
+          }
+
+          &--md {
+            width: 144%;
+          }
+        }
+      }
+    }
+  }
+
+  .img-content {
+    padding: 1rem !important;
+
+    &__main-content, &__sub-content {
+      max-width: 100% !important;
+    }
+  }
+
+  .example {
+    .box-list {
+      display: flex;
+      flex-direction: column;
+
+      &__avarta img {
+        width: 100%;
+      }
+    }
+
+    div:nth-child(3),
+    div:nth-child(7),
+    div:nth-child(10) {
+      .box-list {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
