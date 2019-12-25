@@ -40,15 +40,27 @@
 
           &--ssm {
             width: 100%;
-            max-height: 220px;
+            max-height: 246px;
+          }
+
+          &--xsm {
+            width: 136%;
           }
 
           &--sm {
-            width: 140%;
+            width: 143%;
           }
 
           &--md {
             width: 144%;
+          }
+
+          &--xl {
+            width: 152%;
+          }
+
+          &--xxl {
+            width: 164%;
           }
         }
       }

@@ -4,6 +4,7 @@
     text-align: center;
     padding: 10px;
     font-size: 1.6rem;
+    font-weight: bold;
     color: $white_color;
     // background: linear-gradient(90deg, rgba(2, 162, 231, 0.9) 100%, rgba(2, 162, 231, 0.9) 100%, rgba(2, 162, 231, 0.9) 100%), url("../img/title-watermark.jpeg");
     background: linear-gradient(90deg, rgba(14, 98, 143, 0.9) 100%, rgba(14, 98, 143, 0.9) 100%, rgba(14, 98, 143, 0.9) 100%), url("../img/title-watermark.jpeg");
@@ -21,6 +22,15 @@
 
 .header {
   background-image: linear-gradient(to bottom, #bfece3, #fff);
+
+  .content__list {
+    font-size: 1.4rem;
+
+    .highlight {
+      color: $background_color;
+      font-weight: bold;
+    }
+  }
 
   &__top-img img {
     width: 100%;
@@ -111,7 +121,7 @@
         text-align: center;
         font-weight: 800;
         margin: 1rem 0;
-
+        font-size: 1.2rem;
       }
     }
   }
@@ -125,7 +135,7 @@
       justify-content: center;
       flex-direction: column;
       padding: 3rem;
-      background: linear-gradient(90deg, #3cab94 0%, #2d927e 50%, rgba(255, 255, 255, 0.302959) 100%), url("../img/showroom.jpg");
+      background: linear-gradient(90deg, $background_color 0%, $background_color 50%, rgba(255, 255, 255, 0.302959) 100%), url("../img/showroom.jpg");
       background-size: cover;
 
       .hightlight {
@@ -136,9 +146,9 @@
       }
 
       &__main-content {
-        max-width: 60%;
-        text-align: justify;
+        font-size: 1.2rem;
         color: $white_color;
+        text-align: justify;
 
         &:first-letter {
           font-size: 3.2em;
@@ -150,10 +160,10 @@
       }
 
       &__sub-content {
-        max-width: 60%;
+        font-size: 1.2rem;
         margin-top: 2rem;
+        color: white;
         text-align: right;
-        color: #0e135a;
       }
     }
   }
@@ -200,8 +210,11 @@
 
   .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  &__customize-margin {
+    margin-left: 12px;
   }
 
   /* The actual timeline (the vertical ruler) */
@@ -212,7 +225,7 @@
     background-color: $background_color;
     top: 0;
     bottom: 0;
-    margin-left: -3px;
+    margin-left: 9px;
   }
 
   /* Container around content */
@@ -232,13 +245,14 @@
   .container::after {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    margin-left: 18px;
+    width: 20px;
+    height: 20px;
     right: -17px;
     background-color: white;
     border: 2px solid $main_color;
-    top: 15px;
-    border-radius: 50%;
+    top: 20px;
+    border-radius: 7px;
     z-index: 1;
 
     h2,
@@ -272,7 +286,7 @@
     padding: 20px 30px;
     background-color: $background_color;
     position: relative;
-    border-radius: 6px;
+    border-radius: 7px;
   }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -280,7 +294,7 @@
 
     /* Place the timelime to the left */
     .timeline::after {
-      left: 31px;
+      // left: 31px;
     }
 
     /* Full-width containers */
@@ -290,9 +304,13 @@
       padding-right: 25px;
     }
 
+    .content {
+      margin-left: -30px;
+    }
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-      left: 60px;
+      // left: 60px;
       border: medium solid $background_color;
       border-width: 10px 10px 10px 0;
       border-color: transparent $background_color transparent transparent;
@@ -300,7 +318,7 @@
 
     /* Make sure all circles are at the same spot */
     .right::after {
-      left: 15px;
+      // left: 15px;
     }
 
     /* Make all right containers behave like the left ones */
