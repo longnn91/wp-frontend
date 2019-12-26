@@ -16,6 +16,23 @@
         text-align: center;
         padding-right: 0;
       }
+
+      &__text {
+        padding-left: 70px;
+      }
+
+      &__icon {
+        left: -14px;
+
+        &--md {
+          left: -10px;
+        }
+
+        &--xl {
+          width: 80px;
+          left: -10px;
+        }
+      }
     }
   }
 

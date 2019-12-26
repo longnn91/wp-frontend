@@ -90,85 +90,39 @@ p {
       color: $white_color;
       position: relative;
 
-      @media (min-width: $max-width) {
-        &.tail-left {
-          padding-left: 45px;
+      &.tail-left {
+        margin-left: 40px;
 
-          &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            box-sizing: border-box;
-            border-top: 30px solid transparent;
-            border-left: 40px solid $white-color;
-            border-bottom: 30px solid transparent;
-          }
-
-          &--md {
-            &:before {
-              border-top: 42px solid transparent;
-              border-left: 40px solid $white-color;
-              border-bottom: 42px solid transparent;
-            }
-          }
-
-          &--lg {
-            &:before {
-              border-top: 46px solid transparent;
-              border-left: 40px solid $white-color;
-              border-bottom: 46px solid transparent;
-            }
-          }
-
-          &--xl {
-            &:before {
-              border-top: 57px solid transparent;
-              border-left: 40px solid $white-color;
-              border-bottom: 57px solid transparent;
-            }
-          }
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: -40px;
+          top: 0px;
+          width: 40px;
+          height: 100%;
+          box-sizing: border-box;
+          background-image: url("../img/title-tail.png");
+          background-repeat: repeat-y;
+          background-position: right top;
+          transform: rotate(180deg);
         }
+      }
 
-        &.tail-right {
-          &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-            box-sizing: border-box;
-            border-top: 30px solid transparent;
-            border-right: 40px solid $white-color;
-            border-bottom: 30px solid transparent;
-          }
-
-          &--md {
-            &:before {
-              border-top: 42px solid transparent;
-              border-right: 40px solid $white-color;
-              border-bottom: 42px solid transparent;
-            }
-          }
-
-          &--lg {
-            &:before {
-              border-top: 46px solid transparent;
-              border-right: 40px solid $white-color;
-              border-bottom: 46px solid transparent;
-            }
-          }
-
-          &--xl {
-            padding-right: 40px;
-
-            &:before {
-              border-top: 57px solid transparent;
-              border-right: 40px solid $white-color;
-              border-bottom: 57px solid transparent;
-            }
-          }
+      &.tail-right {
+        margin-right: 40px;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          right: -40px;
+          top: 0px;
+          box-sizing: border-box;
+          width: 40px;
+          height: 100%;
+          background-image: url("../img/title-tail.png");
+          background-repeat: repeat-y;
+          background-position: right top;
         }
       }
     }

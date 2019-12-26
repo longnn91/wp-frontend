@@ -1,5 +1,7 @@
 .section {
   &__header {
+    display: flex;
+    justify-content: center;
     margin: 0 30px;
     text-align: center;
     padding: 10px;
@@ -12,6 +14,30 @@
     &__text-under {
       padding-right: 32px;
       text-align: right;
+    }
+
+    &__text {
+      position: relative;
+    }
+
+    &__icon {
+      width: 70px;
+      position: absolute;
+      top: -22px;
+      left: -80px;
+
+      &--md {
+        width: 90px;
+        position: absolute;
+        top: -18px;
+        left: -100px;
+      }
+
+      &--xl {
+        width: 150px;
+        top: -25px;
+        left: -160px;
+      }
     }
   }
 
