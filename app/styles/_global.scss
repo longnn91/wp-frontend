@@ -82,7 +82,6 @@ p {
     flex-direction: column;
 
     &__header {
-      // height: 30px;
       background: $background_color;
       padding: 0.8rem;
       font-size: 1.2rem;
@@ -111,6 +110,7 @@ p {
 
       &.tail-right {
         margin-right: 40px;
+
         &:before {
           content: '';
           display: block;
