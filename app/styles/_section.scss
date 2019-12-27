@@ -34,7 +34,7 @@
       }
 
       &--xl {
-        width: 150px;
+        width: 120px;
         top: -25px;
         left: -160px;
       }
@@ -100,7 +100,7 @@
 
   .content {
     justify-content: start;
-    margin-right:30px;
+    margin-right: 30px;
     margin-left: 20px;
 
     &__list {
@@ -357,7 +357,7 @@
 .footer {
   overflow: hidden;
 
-  &__img img {
+  img {
     width: 100%;
     max-height: 600px;
     object-fit: cover;
