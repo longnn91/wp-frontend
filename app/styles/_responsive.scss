@@ -111,6 +111,14 @@
     }
   }
 
+  .material {
+    .box__item__border {
+      img {
+        width: 45%;
+      }
+    }
+  }
+
   .mobile-only {
     display: unset;
   }
