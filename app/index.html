@@ -12,9 +12,11 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__top-img">
-        <img src="./img/header.png" />
-      </div>
+      <section class="picture">
+        <div class="picture__top-img">
+          <img src="./img/header.png" />
+        </div>
+      </section>
       <div class="content__list text-center">
         Đơn giá này áp dụng cho CT <span class="highlight">Nhà Phố, Biệt Thự Phố</span> tiêu chuẩn
         có tổng diện tích thi công <span class="highlight"> ≥ 350m<sup>2</sup></span>
@@ -863,18 +865,34 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="box-list__main__header">
-              HOTLINE
-              <div class="border-top">
-                0899 54 99 88
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
+          <div class="col-md-12 resources__override">
             <div class="row">
-              <div class="col-md-6 box-flag__main__text">facebook.com/TimeCons.vn/</div>
-              <div class="col-md-6 box-flag__main__text">www.timecons.vn</div>
+              <div class="col-sm-6">
+                <div class="box-list__main__header row">
+                  <div class="resources__phone-icon">
+                    <img src="img/icon/phone-yellow.svg">
+                  </div>
+                  <div class="resources__content">
+                    HOTLINE
+                    <div class="border-top">
+                      0899 54 99 88
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row box-list__main__header">
+                  <div class="resources__phone-icon">
+                    <img src="img/icon/weebly-brands.svg">
+                  </div>
+                  <div class="resources__content">
+                    fb.com/TimeCons.vn
+                    <div class="border-top">
+                      www.timecons.vn
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -892,7 +910,6 @@
           <div class="box-list__main__header tail-right pr-5">
             THỜI GIAN THI CÔNG
           </div>
-
           <div class="col-md-12">
             <div class="timeline">
               <div class="container right">
@@ -901,7 +918,6 @@
                   <p>3,5 - 5 THÁNG</p>
                 </div>
               </div>
-
               <div class="container right">
                 <div class="content">
                   <h2>PHẦN MÓNG</h2>
@@ -943,7 +959,8 @@
     <section class="method section">
       <div class="section__header">
         <div class="section__header__text">
-          <img class="section__header__icon section__header__icon--md" src="./img/icon/icon_phuong-phap-tinh-dien-tich.svg" />
+          <img class="section__header__icon section__header__icon--md"
+            src="./img/icon/icon_phuong-phap-tinh-dien-tich.svg" />
           <span>PHƯƠNG PHÁP TÍNH DIỆN TÍCH</span>
         </div>
       </div>
@@ -1306,11 +1323,13 @@
               <td>Đại Thành 1000L SU304 ngang</td>
             </tr>
             <tr class="thead-dark">
-              <th colspan="5">
+              <th colspan="5" class="text-left text-md-center">
                 <div>QUÝ KHÁCH VUI LÒNG GỌI ĐIỆN THOẠI ĐỂ ĐƯỢC TƯ VẤN THÊM:</div>
-                <div>
-                  <img src="img/icon/phone.png" class="method__customize__icon">
-                  <span> 0899 54 99 88</span>
+                <div class="method__customize">
+                  <img src="img/icon/phone-white.svg" class="method__customize__icon">
+                  <a class="method__customize__phone" href="tel:0899549988">
+                    0899 54 99 88
+                  </a>
                 </div>
               </th>
             </tr>

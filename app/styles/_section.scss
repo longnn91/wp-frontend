@@ -46,6 +46,15 @@
   }
 }
 
+.picture {
+  &__top-img img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+}
+
 .header {
   background-image: linear-gradient(to bottom, #bfece3, #fff);
 
@@ -56,12 +65,6 @@
       color: $background_color;
       font-weight: bold;
     }
-  }
-
-  &__top-img img {
-    width: 100%;
-    max-height: 600px;
-    object-fit: cover;
   }
 
   &__sub-text {
@@ -223,8 +226,14 @@
 
   &__customize {
     &__icon {
-      width: 2%;
+      width: 25px;
       margin: 0 1rem;
+    }
+
+    font-size: 1.4rem;
+
+    &__phone {
+      color: #f7ff00;
     }
   }
 }
@@ -243,7 +252,6 @@
     margin-left: 12px;
   }
 
-  /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
@@ -254,7 +262,6 @@
     margin-left: 9px;
   }
 
-  /* Container around content */
   .container {
     padding: 10px 40px;
     padding-right: 0px;
@@ -267,7 +274,6 @@
     }
   }
 
-  /* The circles on the timeline */
   .container::after {
     content: '';
     position: absolute;
@@ -287,8 +293,6 @@
     }
   }
 
-
-  /* Add arrows to the right container (pointing left) */
   .right::before {
     content: " ";
     height: 0;
@@ -302,54 +306,32 @@
     border-color: transparent $background_color transparent transparent;
   }
 
-  /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
   }
 
-  /* The actual content */
   .content {
     padding: 20px 30px;
     background-color: $background_color;
     position: relative;
     border-radius: 7px;
   }
+}
 
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+.resources {
+  &__phone-icon {
+    width: 50px;
+    margin-top: 5px;
+  }
 
-    /* Place the timelime to the left */
-    .timeline::after {
-      // left: 31px;
-    }
+  &__content {
+    margin-left: 20px;
+  }
 
-    /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-
-    .content {
-      margin-left: -30px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      // left: 60px;
-      border: medium solid $background_color;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent $background_color transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .right::after {
-      // left: 15px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
+  &__override {
+    .row {
+      margin-right: -8px;
+      margin-left: -8px;
     }
   }
 }
