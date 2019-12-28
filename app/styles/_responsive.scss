@@ -110,4 +110,12 @@
       }
     }
   }
+
+  .mobile-only {
+    display: unset;
+  }
+
+  .not-mobile {
+    display: none;
+  }
 }
