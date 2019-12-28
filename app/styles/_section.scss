@@ -336,6 +336,16 @@
   }
 }
 
+.example {
+  .box-list {
+    &__avarta {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+
 .footer {
   overflow: hidden;
 
