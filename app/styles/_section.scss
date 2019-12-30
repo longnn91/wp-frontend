@@ -118,7 +118,6 @@
   }
 }
 
-
 .material {
   .box {
     margin-top: 1.5rem;
@@ -196,9 +195,8 @@
       }
     }
   }
-}
 
-.method {
+
   &__map img {
     width: 100%;
     object-fit: cover;
@@ -206,11 +204,15 @@
 
   .table-striped tbody tr:nth-of-type(odd) {
     background-color: #eefafa;
+
+    .custom-white-color {
+      color: white;
+    }
   }
 
-  .table-bordered th,
-  .table-bordered td {
-    border: 3px solid $background_color;
+  .table .thead-dark th {
+    background-color: $main_color;
+    border-color: $main_color;
   }
 
   .table thead th {
@@ -235,6 +237,38 @@
     &__phone {
       color: #f7ff00;
     }
+  }
+
+}
+
+.method {
+  &__map img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #eefafa;
+
+    .custom-white-color {
+      color: white;
+    }
+  }
+
+  .table .thead-dark th {
+    background-color: $main_color;
+    border-color: $main_color;
+  }
+
+  .table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid $background_color;
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+    border-top: 1px solid $background_color;
   }
 }
 
